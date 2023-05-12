@@ -1,3 +1,61 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
+ * {
+     margin: 0;
+     padding: 0;
+     scroll-behavior: smooth;
+     text-decoration: none;
+ }
 
-                
+ body {
+     overflow-x: hidden;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ :root {
+     --primary-color-button: #f02e65;
+     --primary-color-text: #40404c;
+     --secondary-color: #6e6e6e;
+     --font-family-body: 'Poppins', sans-serif;
+     --font-size-body: 16px;
+ }
+ .logo {
+     width: 150px;
+ }
+ .nav-left {
+     display: flex;
+     align-items: center;
+     gap: 30px;
+ }
+ .nav-left li {
+     list-style-type: none;
+ }
+ .nav-left a {
+     font-size: var(--font-size-body);
+     color: var(--primary-color-text);
+     font-weight: 600;
+ }
+ .github-stars{
+    padding: 3px 8px;
+    font-size: 13px;
+    border-radius: 5px;
+    color: #ffff;
+    background-color: var(--secondary-color);
+    position: relative;
+    font-weight: 600;
+    margin-left: 7px;
+ }
+ .github-stars::before{
+    content: "";
+    border: solid;
+    border-color: var(--secondary-color);
+    transform: rotate(45deg);
+    top: 9px;
+    position: absolute;
+    z-index: 1;
+    left: -3px;
+ }
+ .fa-github{
+    margin: 0px 6px;
+ }
+ 
